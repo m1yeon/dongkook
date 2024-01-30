@@ -7,7 +7,7 @@ const b_rbtn = $('.b_rbtn');
 $('.brand_slide > li:last-child').insertBefore('brand_slide > li:first-child');
 
 //2. 왼쪽으로 이동 함수
-function moveLeft(){
+function moveRight(){
   $('.brand_slide').animate({'margin-left':'-315px'},400,
   function(){
     $('.brand_slide > li:first-child').insertAfter('.brand_slide li:last-child');
@@ -17,31 +17,47 @@ function moveLeft(){
 }
 
 //3. 오른쪽 이동 함수
-function moveRight(){
-  $('.brand_slide').animate({'margin-left':'0px'},400,
+function moveLeft(){
+  $('.brand_slide').animate({'margin-left':'315px'},400,
   function(){
     $('.brand_slide li:last-child').insertBefore('.brand_slide li:first-child');
-    $('.brand_slide').css('margin-left','-315px');
+    $('.brand_slide').css('margin-left','0px');
   });
 }
-
 // let Timer = setInterval(moveLeft,3500);
 
+let sbar_num = 1;
+
+//왼쪽 버튼 클릭시
 b_lbtn.click(function(){
   // clearInterval(Timer);
   moveLeft();
+  if(sbar_num == 1){
+    sbar_num = 10;
+  }else{
+    sbar_num = --sbar_num;
+  }
+  $('.slide_bar_inner').animate({'width':sbar_num*120},400);
+  
 });
 
+//오른쪽 버튼 클릭시
 b_rbtn.click(function(){
   // clearInterval(Timer);
   moveRight();
+  if(sbar_num == 10){
+    sbar_num =1;
+  }else{
+    sbar_num = ++sbar_num;
+  }
+  console.log(sbar_num);
+
+  $('.slide_bar_inner').animate({'width':sbar_num*120},400);
 });
 
 
 // 모달 제이쿼리
 const story = $('.brand_slide li');
-
-
 
 story.click(function(){
   let i = $(this).index()+1;
@@ -92,6 +108,12 @@ story.click(function(){
     $('.brand_story .bstory_img').attr('src','./images/brand_story'+i+'.jpg');
   }
     
+
+
+  // 슬라이드바 
+
+
+
 });
 
 
