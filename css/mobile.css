@@ -8,7 +8,8 @@
     height: 70px !important;
     overflow: visible;
     position: fixed;
-  }
+    background: rgba(255,255,255,.8);
+    }
   header h1{
     width: auto !important; height: 50%;
     padding-top: 20px !important;
@@ -18,7 +19,7 @@
   .h_gnb{
     position: absolute; 
     left: 50%; transform: translateX(-50%); 
-    top: 70px;
+    top: 100px;
     width: 94%; 
     display:none;
     background-color: rgba(3,3,3,.8);
@@ -106,7 +107,7 @@
   .main_slide > .s_btn > li:last-child{left: 70px;}
 
   /* 2. 대표브랜드 */
-  section.brand_wrap{height: 70vh !important;}
+  section.brand_wrap{height: 90vh !important;}
   .brand{
     position: absolute;
     width: 94%; margin: 0 auto;
@@ -184,7 +185,7 @@
 .history > ul > li > span:last-child{font-size: 0.9rem;}
 
 /* 4. 뉴스&공지 */
-.news_wrap{height: 90vh;}
+.news_wrap{height: 100vh;}
 .news{
   width: 94%; height: fit-content;
   position: absolute;

@@ -25,6 +25,23 @@ $(document).ready(function(){
       $(this).find('span').addClass('gnb_act');
       $(this).parent().siblings().find('span').removeClass('gnb_act');
     });
+    $('.h_wrap h1 img').attr('src','./images/logo.png'); //로고
+    $('.h_wrap #search_btn img').attr('src','./images/search_btn_black.png');
+    $('.h_wrap .menu_btn img').attr('src','./images/menu_btn.png');
+    // $(window).scroll(function(){
+    //   let s_pos = $(this).scrollTop();
+    //   console.log(s_pos);
+
+    //   if(s_pos >=400){
+
+    //     //검색버튼
+    //     //메뉴버튼
+    //   }else{
+    //     $('.h_wrap h1 img').attr('src','./images/logo_white.png');//로고
+    //     $('.h_wrap #search_btn img').attr('src','./images/search_btn.png');//검색버튼
+    //     $('.h_wrap .menu_btn img').attr('src','./images/menu_btn_white.png');//메뉴버튼
+    //   }
+    // });
   }
 
 });
