@@ -56,45 +56,26 @@ section { width: 100%; height: 100vh; }
 
 /*0. 팝업 모달윈도 */
 .popup_wrap { position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; background: rgba(0, 0, 0, .7); z-index: 9999; } 
-
 .popup { position: absolute; width: 400px; } 
 
 /*1. 메인 슬라이드 */
 .main_slide { width: 100%; height: 100vh; position: relative; overflow: hidden; } 
-
 .main_slide h2 { display: none; } 
-
 .main_slide>div { position: absolute; width: 100%; height: 100vh; top: 0px; left: 0px; overflow: hidden; } 
-
 .main_slide>div>.slide_shadow { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: rgb(0, 0, 0); background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.7) 100%); z-index: 99; } 
-
 .main_slide>div>.slide_txt { position: absolute; z-index: 3; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; } 
-
 .main_slide>div span { color: #fff; display: block; } 
-
 .main_slide>div .s_txt01 { font-size: 60px; font-weight: 600; padding-bottom: 35px; } 
-
 .main_slide>div .s_txt02 { font-size: 20px; padding-bottom: 25px; font-weight: 600; line-height: 30px; } 
-
 .main_slide>div .s_txt03 { font-size: 16px; font-weight: 300; line-height: 25px; } 
-
-.main_slide>div>img { /* width: 100%; */
- height: 120%; display: block; z-index: 1; } 
-
+.main_slide>div>img {width: 100%; height: 100%; display: block; z-index: 1; } 
 .main_slide .slide01 { z-index: 12; } 
-
-.main_slide .slide02 { z-index: 11; } 
-
+.main_slide .slide02 { z-index: 11; }
 .main_slide .slide03 { z-index: 10; } 
-
 .main_slide>.s_btn { display: flex; position: absolute; z-index: 100; width: 1200px; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
-
 .main_slide>.s_btn>li { width: 55px; position: absolute; cursor: pointer; } 
-
-.main_slide>.s_btn img { width: 100%; } 
-
+.main_slide>.s_btn img {width: 100%;} 
 .main_slide>.s_btn>li:first-child { left: -70px; } 
-
 .main_slide>.s_btn>li:last-child { right: -70px; } 
 
 /* 2. 대표브랜드 */
