@@ -514,11 +514,9 @@ address{font-size: 14px; line-height: 25px;}
 /* 탑버튼&문의버튼 */
 .f_btn{position: fixed; bottom: 30px; right: 30px; z-index: 9000; }
 .f_btn > li{padding-bottom: 15px;}
-.f_btn > li:first-child{bottom: 20px;}
-.f_btn > li:last-child{bottom: 20px;}
-.f_btn > li > a{
-  display: inline-block;
+.f_btn > li > .button, .t_btn{
   font-weight: 600;
+  display: block;
   width: 55px; height: 55px;
   border: 1px solid #222; 
   border-radius: 50%; 
@@ -526,6 +524,8 @@ address{font-size: 14px; line-height: 25px;}
   background: #222;
   text-decoration: none;
 }
+
+/* .t_btn{display: none;} */
 .f_btn > li:first-child > a, .f_btn > li:last-child > a{color: #fff;}
 .f_btn > li:first-child > a{box-shadow: 0px 0px 5px 0px rgba(0,0,0,.8);}
-.f_btn > li:last-child > a{border: 1px solid #ccc; box-shadow: 0px 0px 5px 0px rgba(0,0,0,.25);}
+.f_btn > li:last-child > a{border: 1px solid #333; box-shadow: 0px 0px 5px 0px rgba(0,0,0,.25);}
